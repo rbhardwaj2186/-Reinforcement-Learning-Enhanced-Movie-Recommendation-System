@@ -1,5 +1,10 @@
 # 📈 InTuneRecSys: Reinforcement Learning-Enhanced Movie Recommendation System
-![df2](https://github.com/user-attachments/assets/2b25973b-388e-49d7-9cba-a5a752d444d0)  ![df1](https://github.com/user-attachments/assets/ad12d399-63dd-47da-93ac-ddd86aa2d244)
+![df2](https://github.com/user-attachments/assets/2b25973b-388e-49d7-9cba-a5a752d444d0) 
+
+[Open the Notebook in NBViewer](https://nbviewer.org/github/rbhardwaj2186/-Reinforcement-Learning-Enhanced-Movie-Recommendation-System/blob/main/Recommendation_model.ipynb)
+
+
+![df1](https://github.com/user-attachments/assets/ad12d399-63dd-47da-93ac-ddd86aa2d244)
 
 
 
