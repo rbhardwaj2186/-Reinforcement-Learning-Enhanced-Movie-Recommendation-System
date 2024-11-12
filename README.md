@@ -61,3 +61,34 @@ The Full Dataset is used to build a generalized recommendation engine, while the
    ```bash
    git clone https://github.com/username/InTuneRecSys.git
    cd InTuneRecSys
+
+
+Sample Code
+
+Here’s a snippet of the RL-enhanced recommendation function that dynamically adjusts resources based on movie preferences and system load:
+```bash
+def rl_improved_recommendations(title):
+    agent = RLAgent()  # Initialize RL agent
+    idx = indices[title]
+    sim_scores = sorted(list(enumerate(cosine_sim[idx])), key=lambda x: x[1], reverse=True)[1:26]
+    movie_indices = [i[0] for i in sim_scores]
+    movies = smd.iloc[movie_indices][['title', 'vote_count', 'vote_average', 'year', 'description']]
+    
+    # RL optimization to dynamically adjust resources
+    for _ in range(10):
+        action = agent.select_action(state)  # Choose action based on state
+        # Update CPU count, batch size, etc., based on the action taken
+        state['cpu_count'] = max(1, state['cpu_count'] + action['cpu_increment'])
+        state['batch_size'] = max(1, state['batch_size'] + action['batch_increment'])
+    
+    # Display top recommendations and resource optimization details
+    return movies
+```
+
+📚 References
+
+
+  `  Netflix InTune Research Paper: InTune: Reinforcement Learning-based Data Pipeline Optimization for Deep Recommendation Models
+  ```      This project draws heavily from Netflix's InTune research, where an RL agent optimizes data pipelines for deep learning recommendation models. We apply similar concepts to build a recommendation engine that is both efficient and adaptive to resource constraints, improving overall user experience with personalized and timely recommendations
+
+
