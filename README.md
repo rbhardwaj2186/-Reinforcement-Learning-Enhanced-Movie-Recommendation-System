@@ -1,4 +1,8 @@
 # 📈 InTuneRecSys: Reinforcement Learning-Enhanced Movie Recommendation System
+![df2](https://github.com/user-attachments/assets/2b25973b-388e-49d7-9cba-a5a752d444d0)  ![df1](https://github.com/user-attachments/assets/ad12d399-63dd-47da-93ac-ddd86aa2d244)
+
+
+
 
 This repository contains a sophisticated movie recommendation engine leveraging reinforcement learning to optimize recommendation pipeline efficiency. Inspired by Netflix's research project *InTune: Reinforcement Learning-based Data Pipeline Optimization for Deep Recommendation Models*, InTuneRecSys enhances traditional recommendation models by implementing an RL-based pipeline optimization for real-time, dynamic resource allocation.
 
